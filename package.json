@@ -6,7 +6,7 @@
     "url": "http://kun.io/wprl"
   },
   "homepage": "https://github.com/wprl/baucis-vivify",
-  "version": "0.20.0",
+  "version": "0.21.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha --bail"
@@ -36,11 +36,11 @@
   ],
   "peerDependencies": {
     "mongoose": "~3.8.1",
-    "baucis": "~1.0.0-candidate.2"
+    "baucis": "~1.0.0-candidate.6"
   },
   "devDependencies": {
-    "baucis": "^1.0.0-candidate.2",
-    "expect.js": "^0.3.1",
-    "request": "^2.36.0"
+    "baucis": "~1.0.0-candidate.6",
+    "expect.js": "~0.3.1",
+    "request": "~2.36.0"
   }
 }

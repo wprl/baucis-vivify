@@ -163,20 +163,20 @@ describe('vivify', function () {
     });
   });
 
-  it('should 204 when restricted query has no results', function (done) {
+  it('should 200 when restricted query has no results', function (done) {
     var options = {
       url: 'http://localhost:8012/api/stores/Corner/tools?sort=name',
       json: true
     };
     request.get(options, function (error, response, body) {
       if (error) return done(error);
-      expect(response.statusCode).to.be(204);
-      expect(body).to.be(undefined);
+      expect(response.statusCode).to.be(200);
+      expect(body).to.eql([]);
       done();
     });
   });
 
-  it('should 422 when restricted query parent ID is invalid');
+  it('should 400 when restricted query parent ID is invalid');
 
   it('should allow mounting of subcontrollers (GET plural)', function (done) {
     var options = {
