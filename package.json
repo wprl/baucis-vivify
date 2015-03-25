@@ -35,8 +35,8 @@
     "http"
   ],
   "peerDependencies": {
-    "mongoose": "~3.8.1",
-    "baucis": "~1.1.0"
+    "mongoose": "^3.8.23",
+    "baucis": "^1.1.0"
   },
   "devDependencies": {
     "baucis": "~1.1.0",
