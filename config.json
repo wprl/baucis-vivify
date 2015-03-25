@@ -1,5 +1,5 @@
 {
   "mongo": {
-    "url": "mongodb://10.0.0.101/yYyBaUcIsTeStYyY"
+    "url": "mongodb://localhost/yYyBaUcIsTeStYyY"
   }
 }
