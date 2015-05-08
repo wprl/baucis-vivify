@@ -106,6 +106,11 @@ var fixture = {
                   ['Mow the Lawn', 'Make the Bed', 'Darn the Socks'].map(function (name) { return { name: name } }),
                   function (error,task) {
                     if (error) return done(error);
+
+                    if (Array.isArray(task)) {
+                      task = task[0];
+                    }
+
                     task.user = alice._id;
                     task.save();
 
@@ -114,6 +119,10 @@ var fixture = {
                       ['Westlake', 'Corner'].map(function (name) { return { name: name } }),
                       function (error, store) {
                         if (error) return done(error);
+
+                        if (Array.isArray(store)) {
+                          store = store[0];
+                        }
 
                         var cheeses = [
                           { name: 'Cheddar', color: 'Yellow' },
